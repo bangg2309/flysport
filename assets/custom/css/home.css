@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+.product-image {
+    width: 100%;          /* Đảm bảo hình ảnh đầy đủ chiều rộng của khung chứa */
+    height: 200px;        /* Đặt chiều cao cố định (bạn có thể tùy chỉnh giá trị này) */
+    object-fit: cover;    /* Giữ tỷ lệ và cắt hình ảnh để vừa khít khung */
+    border-radius: 8px;   /* Làm tròn góc nếu muốn */
+    margin: 10px;        /* Tạo khoảng cách giữa hình ảnh và khung chứa */
+}
+.product-link {
+    display: block;            /* Giúp toàn bộ hình ảnh trở thành khu vực có thể nhấp */
+    text-decoration: none;     /* Loại bỏ gạch chân (nếu có) */
+    transition: transform 0.3s ease; /* Hiệu ứng khi rê chuột vào liên kết */
+}
+
+.product-link:hover {
+    transform: scale(1.05);    /* Phóng to nhẹ khi rê chuột vào */
+}
+
+.blog-section .card {
+    border: none; /* Loại bỏ viền mặc định */
+    border-radius: 8px; /* Góc bo tròn cho thẻ blog */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-5px); /* Di chuyển nhẹ lên trên khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Tăng đổ bóng khi hover */
+}
+
+.blog-section .card-img-top {
+    height: 350px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Cắt hình ảnh sao cho vừa khung */
+}
+.text-main-color {
+    color: #262C7B; /* Màu chính của trang web */
+}
+.background-main-color{
+    background: #454B99;
+}
