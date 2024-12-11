@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+.category-link {
+    color: #262C7B;
+    font-weight: bold;
+}
+.category-link:hover {
+    text-decoration: underline; /* Thêm hiệu ứng khi hover nếu muốn */
+
+}
+
+
+
+.product-list .card {
+    width: 100%; /* Để đảm bảo thẻ card thích ứng với cột Bootstrap */
+    max-width: 250px; /* Đặt chiều rộng cố định */
+    height: 350px; /* Đặt chiều cao cố định */
+    margin: 0 auto; /* Căn giữa các thẻ sản phẩm */
+}
+
+.product-list .card-img-top {
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều ngang */
+    height: 200px; /* Đặt chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.product-list .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Căn chỉnh nội dung đều giữa các phần */
+    height: calc(100% - 200px); /* Đảm bảo nội dung bên trong không tràn */
+}
+
+.product-list .card-title,
+.product-list .card-text,
+.product-list .btn {
+    margin: 5px 0;
+}
+.pagination .page-link {
+    color: #262C7B; /* Màu chữ */
+}
+.pagination .page-link:hover {
+    background-color: #f8f9fa; /* Nền khi hover */
+    color: #0056b3; /* Màu chữ khi hover */
+}
+.pagination .active .page-link {
+    background-color: #262C7B; /* Nền cho trang đang chọn */
+    border-color: #262C7B;
+    color: white; /* Màu chữ cho trang đang chọn */
+}
+

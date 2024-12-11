@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .logo img {
+    max-width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+.carousel-inner img {
+    max-height: 600px; /* Giới hạn chiều cao ảnh */
+
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+.img-thumbnail {
+    cursor: pointer;
+    max-height: 100px; /* Kích thước ảnh nhỏ */
+    object-fit: cover;
+}
+
+.img-thumbnail:hover {
+    border: 2px solid #262C7B; /* Hiệu ứng hover khi trỏ vào thumbnail */
+}
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color-option.active {
+    border-color: #262C7B; /* Màu viền khi được chọn */
+}
+
+#productQuantity {
+    width: 50px;
+}
+

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/custom/css/product-detail.css">
+</head>
+
+<body>
+<!-- Header -->
+<header class=" py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../assets/images/Capture-Photoroom 2.png" alt="Fly Sport Logo" width="100">
+        </div>
+
+        <!-- Search bar with icon -->
+        <div class="search-bar d-flex align-items-center w-50">
+            <input type="text" class="form-control bg-body-secondary" placeholder="Tìm sản phẩm ...">
+            <button class="btn btn-light ms-2">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <!-- Contact info and icons -->
+        <div class="contact-info d-flex align-items-center">
+            <span class="me-3 background-main-color text-light rounded-pill p-1">Hotline: 0987654321</span>
+            <button class="btn btn-light me-2">
+                <i class="fas fa-bell" style="color: #EC221F;"></i>
+            </button>
+            <button class="btn btn-light">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Navigation -->
+<nav class=" text-white py-2" style="background-color: #454B99;">
+    <div class="container d-flex justify-content-between ">
+        <div class="d-flex">
+            <a href="#" class="text-white mx-3 text-decoration-none fw-bold ">Trang chủ</a>
+            <a href="#" class="text-white mx-3 text-decoration-none">Sản phẩm</a>
+            <a href="#" class="text-white mx-3 text-decoration-none">Flash sale</a>
+            <a href="#" class="text-white mx-3 text-decoration-none">Blog</a>
+        </div>
+        <div class="d-flex">
+            <a href="#" class="text-white mx-3 text-decoration-none">Login</a>
+            <a href="#" class="text-white mx-3 text-decoration-none">Help</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="py-3">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
+        </ol>
+    </div>
+</nav>
+
+<!-- Product Detail Section -->
+<section class="product-detail py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Product Images -->
+            <div class="col-md-6">
+                <!-- Carousel -->
+                <div id="productImagesCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/vợt/vot1.jpg" class="d-block w-100 img-fluid"
+                                 alt="Product Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/vợt/vot2.jpg" class="d-block w-100 img-fluid"
+                                 alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/vợt/vot3.jpg" class="d-block w-100 img-fluid"
+                                 alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productImagesCarousel"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productImagesCarousel"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="row mt-3 g-2">
+                    <div class="col-4">
+                        <img src="../assets/images/vợt/vot1.jpg" class="img-thumbnail" alt="Thumbnail 1"
+                             data-bs-target="#productImagesCarousel" data-bs-slide-to="0">
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/images/vợt/vot2.jpg" class="img-thumbnail" alt="Thumbnail 2"
+                             data-bs-target="#productImagesCarousel" data-bs-slide-to="1">
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/images/vợt/vot3.jpg" class="img-thumbnail" alt="Thumbnail 3"
+                             data-bs-target="#productImagesCarousel" data-bs-slide-to="2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="col-md-6">
+                <h2 class="product-title">Vợt cầu lông Y24 - Xanh</h2>
+                <p class=" fw-bold" style="color: #050A55; font-size: 24px">570.000 đ</p>
+                <p class="description">
+                    Đây là sản phẩm chất lượng cao dành cho những người yêu thích cầu lông.
+                    Thiết kế đẹp mắt, bền bỉ và hiệu suất vượt trội.
+                    <br>
+                    Với VNB Carbon Training 150g, những thay đổi mới trên vợt traning của VNB mới có đó là vẻ ngoài vợt
+                    không còn đơn thuần chỉ là 1 một màu sơn, không chi tiết, không thông số trên thân. Vẻ ngoài vợt
+                    giống với Lining Aeronaut 9000c Xanh Dương Đỏ giúp VNB Carbon Training 150g có ngaoij hình nổi bật,
+                    không gây "nhàm chán" hơn.
+                </p>
+
+                <!-- Chọn màu -->
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Chọn màu:</label>
+                    <div>
+                        <button class="btn btn-outline-primary me-2 color-option" style="background-color: #262C7B;"
+                                data-color="Xanh"></button>
+                        <button class="btn btn-outline-primary me-2 color-option" style="background-color: #FF5733;"
+                                data-color="Đỏ"></button>
+                        <button class="btn btn-outline-primary me-2 color-option" style="background-color: #F1C40F;"
+                                data-color="Vàng"></button>
+                    </div>
+                </div>
+
+                <!-- Tăng/Giảm số lượng -->
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Số lượng:</label>
+                    <div class="input-group" style="max-width: 150px;">
+                        <button class="btn btn-outline-secondary" id="decreaseQuantity">-</button>
+                        <input disabled  class="form-control text-center" id="productQuantity" value="1" min="1">
+                        <button class="btn btn-outline-secondary" id="increaseQuantity">+</button>
+                    </div>
+                </div>
+
+                <!-- Nút thêm vào giỏ hàng -->
+                <button class="btn btn-primary mt-3 fw-bold" style="background-color: #050A55">Thêm vào giỏ hàng</button>
+            </div>
+
+            <!-- Related Products -->
+            <div class="mt-5">
+                <h3>Sản phẩm liên quan</h3>
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/vợt/vot2.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt cầu lông A23 - Đỏ</h5>
+                                <p class="text-danger">900,000 VNĐ</p>
+                                <a href="#" class="btn btn-primary" style="background-color: #050A55">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/vợt/vot3.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt cầu lông C99 - Vàng</h5>
+                                <p class="text-danger">1,500,000 VNĐ</p>
+                                <a href="#" class="btn btn-primary" style="background-color: #050A55">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/vợt/vot4.jpg" class="card-img-top" alt="Product 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt cầu lông D77 - Trắng</h5>
+                                <p class="text-danger">2,000,000 VNĐ</p>
+                                <a href="#" class="btn btn-primary" style="background-color: #050A55">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card h-100">
+                            <img src="../assets/images/vợt/vot5.jpg" class="card-img-top" alt="Product 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vợt cầu lông E88 - Đen</h5>
+                                <p class="text-danger">1,800,000 VNĐ</p>
+                                <a href="#" class="btn btn-primary" style="background-color: #050A55">Xem chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Footer -->
+<footer class=" text-white py-4" style="background-color: #23275F">
+    <div class="container">
+        <div class="row d-flex">
+            <div class="col-md-4 flex-fill">
+                <h5>THÔNG TIN CHUNG</h5>
+                <p>
+                    Fly Sport là cửa hàng chuyên bán các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp.
+                    Với sứ mệnh: Fly Sport cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho
+                    người chơi thể thao để nâng cao sức khỏe của chính mình.
+                    <br>
+                    Tầm nhìn: Trở thành website bán đồ thể thao có mặt khắp mọi nơi.
+                </p>
+            </div>
+            <div class="col-md-4 flex-fill">
+                <h5 class="">CHÍNH SÁCH</h5>
+                <ul class="">
+                    <li>Chính sách đổi trả,hoàn tiền</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách xử lý khiếu nại</li>
+                    <li>Chính sách vận chuyển</li>
+                    <li>Chính Sách Bảo Mật Thông Tin</li>
+                    <li>Chính sách nhượng quyền</li>
+                </ul>
+            </div>
+            <div class="col-md-4 flex-fill">
+                <h5>LIÊN HỆ</h5>
+                <p>Công ty TNHH Fly Sport</p>
+                <p>Địa chỉ: Hutech University, 798 Xa lộ Hà Nội, Thủ Đức</p>
+                <p>Hotline: 0339876522</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Xử lý chọn màu
+        document.querySelectorAll('.color-option').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.color-option').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const selectedColor = button.getAttribute('data-color');
+                console.log('Màu được chọn:', selectedColor);
+            });
+        });
+
+        // Xử lý tăng/giảm số lượng
+        const quantityInput = document.getElementById('productQuantity');
+        document.getElementById('decreaseQuantity').addEventListener('click', () => {
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+        document.getElementById('increaseQuantity').addEventListener('click', () => {
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+    });
+
+</script>
